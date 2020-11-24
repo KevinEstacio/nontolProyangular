@@ -1,0 +1,28 @@
+<!-- <p>left works!</p>  -->
+
+<div>
+    <h2 class="text-center">Datos</h2>
+    <p class="texto tam">Nombre: Kevin Manuel Ñontol Estacio</p>
+    <p>Email: knontole15_2@unc.edu.pe</p>
+    <p>Direccion: Baños del Inca-Jr Libertad 548</p>
+    <p>Telefono: 925437812</p>
+
+    <div class="social-bar">
+        <a class="icon icon-facebook" href="https://www.facebook.com/kevinmanuel.nontolestacio" target="_blank"><img class="tamano" src="https://img.icons8.com/color/48/000000/facebook-new.png" alt=""></a><br>
+        <a class="icon icon-whatsapp" href="https://wa.me/51925437812" target="_blank"><img class="tamano" src="https://img.icons8.com/cotton/64/000000/whatsapp--v4.png" alt=""></a><br>
+        <a class="icon icon-youtube" href="https://www.youtube.com/channel/UCDqL96FAFKErBg3cK2XSiAQ?view_as=subscriber" target="_blank"> <img class="tamano" src="https://img.icons8.com/color/48/000000/youtube-squared.png" alt=""></a><br>
+        <a class="icon icon-instagram" href="https://www.instagram.com/kevinnontol/" target="_blank"> <img class="tamano" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a><br>
+        <a class="icon icon-mail" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRCVTBbFGvqPkdmTXVHTzRwSvbJpCPQvGLbsgdjVzGZGbCJtKwpTMdkWjmjMsLZWjCflSL" target="_blank"><img class="tamano" src="https://img.icons8.com/fluent/48/000000/gmail--v1.png" /></a>
+    </div>
+
+    <div class="text-center">
+        <button (click)='showInfo()' class="btn ">
+        {{estadoInfo ? 'Ocultar Informacion': 'Informacion'}}
+    </button>
+    </div>
+
+    <div *ngIf='estadoInfo' class='myComponent'>
+        <p>{{info}}</p>
+
+    </div>
+</div>
